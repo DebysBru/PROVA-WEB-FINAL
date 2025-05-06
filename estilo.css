@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #673ab7;
 }
 
 header {
@@ -68,47 +69,99 @@ section {
     padding: 20px;
 }
 
-.sobre{
-    align-items: center;
+.sobre {
     display: flex;
+  
+    justify-content: left;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
 }
 .sobre img{
     max-width: 300px;
 
 }
 
-.oficinas {
+
+.oficina-topo{
     display: flex;
+    align-items: center;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #372073;
+    color: #FFFFFF;
     flex-direction: column;
+    
+
+    
+}
+.oficinas {
+    border-bottom: 5px solid#f8d9f0;
+    border-left: 5px solid#f8d9f0;
+    border-right: 5px solid#f8d9f0;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    
+    
+    
+}
+
+.oficinas-cards {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+   
 }
 
 .oficina {
-    border: 1px solid #ccc;
+    border: 1px solid #f8d9f0;
     border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3e5f5;
     padding: 10px;
     margin: 10px;
-    width: 30%;
-
+    text-align: center;
+    width: 100%;
 }
 
-.oficina h2{
+.oficina h3, span, p  {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
+    
 }
 
 
 .oficina img{
     max-width: 300px;
+    
 }
 
+#botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
 .equipe{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
+    background-color: #FFFFFF;
 }
 .equipe h2{
     display: flex;
@@ -117,7 +170,7 @@ section {
 }
 
 .equipes{
-    border: 1px solid #ccc;
+    border: 1px solid #f8d9f0;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
@@ -133,12 +186,17 @@ section {
 
 .ifizinha {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
 }
 
+.ifizinha h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .ifizinha img{
     max-width: 300px;
 }

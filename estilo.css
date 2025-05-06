@@ -36,6 +36,7 @@ nav a{
     padding-left: 20px;
     padding-right: 20px;
     background-color: #f3e5f5;
+    text-align: left;
 }
 
 .topo img{
@@ -43,7 +44,7 @@ nav a{
 }
 
 .topo-texto h1{
-    font-size: 80px;
+    font-size: 40px;
     margin: 0;
     
 }
@@ -51,7 +52,8 @@ nav a{
 .topo-texto p{
     margin: 0;
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 18px;
+    
    
     
 }
@@ -62,6 +64,7 @@ nav a{
     height: 50px;
     width: 200px;
     border-radius: 16px;
+    font-size: 15px;
 
 }
 

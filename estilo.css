@@ -10,6 +10,11 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+  
+  
+    z-index: 1000; /* garante que fique acima dos outros */
     background-color: #372073;
     height: 120px;
     width: 100%;
@@ -27,11 +32,17 @@ header {
      width: 200px;
  }
 
-nav a{
+
+
+nav a {
     color: white;
     text-decoration: none;/*tira o sublinhado do link*/
     padding: 10px;  /*espaço entre a borda do elemento e o conteudo (espaço de dentro)*/
     font-size: 20px;
+}
+
+nav a:hover {
+    color: #bc22c2;
 }
 
 .topo{
@@ -125,6 +136,7 @@ section {
     background-color: #372073;
     color: #FFFFFF;
     flex-direction: column;
+    width: 100%;
        
 }
 .oficinas {
@@ -158,7 +170,7 @@ section {
 }
 
 .oficina h3, span, p  {
-    display: flex;
+    
     padding-bottom: 10px;
     
 }
@@ -178,6 +190,48 @@ section {
     font-size: 15px;
 }
 
+.ifizinha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #f9f3fa;
+
+}
+
+.ifizinha-texto{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+.ifizinha h2{
+    font-size: 25px;
+}
+
+.ifizinha-cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+}
+ 
+.ifizinha img{
+    width: 100%;
+}
+
+.equipe-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    
+}
 
 .equipe{ 
     display: flex;
@@ -185,53 +239,49 @@ section {
     justify-content: space-between;
     text-align: center;
     background-color: #FFFFFF;
+   flex-direction: column;
+   
    
 }
 .equipe h2{
   font-size: 25px;
 }
 
+
+
 .equipes{
     border: 1px solid #f8d9f0;
     border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    
-}
-.equipe img{
-    max-width: 300px;
-
-}
-
-.ifizinha {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.ifizinha-texto{
-    display: flex;
-
-}
-.ifizinha h2{
-    font-size: 25px;
-}
-.ifizinha-cards{
-    display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.ifizinha img{
-    max-width: 300px;
+    background-color: #f3e5f5;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    height: 700px;
+    
 }
 
-footer {
-    background-color: #512da8;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.equipes a{
+    text-decoration: none;
+    color: #512da8;
+    padding: 10px;  
+    font-size: 15px;
 }
+
+.equipe a:hover{
+    color: #bc22c2;
+}
+.equipe img{
+    width: 100%;
+
+}
+
+.fale-conosco{
+    width: 70%;
+}
+
 
 form {
     display: flex;
@@ -243,7 +293,7 @@ form input, form textarea {
     padding: 8px;
 }
 
-form button {
+button {
     background-color: #673ab7;
     color: white;
     border: none;
@@ -251,6 +301,22 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+button:hover {
     background-color: #512da8;
+}
+
+
+.contato{
+    background-color: #f9f3fa;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    background-color: #512da8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
 }

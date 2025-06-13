@@ -2,6 +2,9 @@
 <html lang="pt-br">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação Web Designe</title>
@@ -12,6 +15,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <img src="logo2.png">
@@ -175,7 +179,9 @@
     <section id="contato" class="contato">
 
         <div class="fale-conosco">
-            <form>
+            
+    <form class="formulario"
+>
                 <input type="text" placeholder="Nome">
                 <input type="email" placeholder="Email">
                 <textarea placeholder="Mensagem"></textarea>
@@ -192,6 +198,26 @@
     </footer>
 
 
+
+    <section class="form-container">
+      <h2>Fale Conosco</h2>
+      <form class="formulario">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    
 </body>
 
 </html>

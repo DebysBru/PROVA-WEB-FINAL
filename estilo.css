@@ -1,31 +1,36 @@
 :root {
-    --roxo-escuro: #372073;
-    --roxo-medio: #512da8;
-    --roxo-vibrante: #bc22c2;
-    --roxo-claro: #f3e5f5;
-    --roxo-pastel: #f9f3fa;
-    --rosa-claro: #f8d9f0;
-    --roxo-botao: #673ab7;
-    --branco: #ffffff;
-    --cinza-claro: #f0f0f3;
+  --roxo-escuro: #372073;
+  --verde-petroleo: #0E7C7B;
+  --verde-claro: #17BEBB;
+  --verde-pastel: #D8F5F1;
+  --vermelho-vibrante: #D62246;
+
+  --font-title: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  margin-bottom: 16px;
+}
+
+p, span, a, li {
+  font-family: var(--font-body);
 }
 
 body {
     margin: 0 auto;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--cinza-claro);
+    background-color: var(--verde-pastel);
     width: 70%;
     display: flex;
     flex-direction: column;
- 
+    font-family: var(--font-body);
 }
 
 header {
     position: sticky;
     top: 0;
-  
-  
     z-index: 1000; /* garante que fique acima dos outros */
     background-color: var(--roxo-escuro);
     height: 120px;
@@ -182,7 +187,7 @@ section {
 }
 
 .oficina h3, span, p  {
-    
+    font-family: var(--font-title);
     padding-bottom: 10px;
     
 }
@@ -306,7 +311,7 @@ form input, form textarea {
 }
 
 button {
-    background-color: #673ab7;
+    background-color: var(--verde-petroleo);
     color: white;
     border: none;
     padding: 10px;
@@ -314,7 +319,7 @@ button {
 }
 
 button:hover {
-    background-color: #512da8;
+    background-color: var(--vermelho-vibrante);
 }
 
 
@@ -326,7 +331,7 @@ button:hover {
 
 
 footer {
-    background-color: #512da8;
+    background-color: var(--roxo-escuro);
     color: white;
     text-align: center;
     padding: 10px;
